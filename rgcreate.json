@@ -1,0 +1,17 @@
+
+{
+  "Name": "Resource Group Creator",
+  "IsCustom": true,
+  "Description": "Allows creating resource groups at subscription level without full contributor access.",
+  "Actions": [
+    "microsoft.Resources/subscriptions/read",
+    "Microsoft.Resources/subscriptions/resourceGroups/write",
+    "Microsoft.Resources/subscriptions/resourceGroups/read"
+  ],
+  "NotActions": [],
+  "DataActions": [],
+  "NotDataActions": [],
+  "AssignableScopes": [
+    "/subscriptions/082a5822-b215-41a0-919f-0527e9956494"
+  ]
+}

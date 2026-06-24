@@ -1,0 +1,3 @@
+variable "aoainame" {
+    type = string  
+}
