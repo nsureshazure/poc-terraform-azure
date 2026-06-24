@@ -3,6 +3,7 @@ module "rg" {
   rgname = local.rgfullname
 
 }
+/*
 module "ASP" {
   source   = "./modules/appserviceplan"
   rgname   = module.rg.rgname
@@ -13,3 +14,4 @@ module "database" {
   rgname   = module.rg.rgname
   location = module.rg.location
 }
+*/
