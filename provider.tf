@@ -1,12 +1,11 @@
-terraform {
-  version ~> 3.1
+terraform{
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
       version = "4.26.0"
     }
   }
-
+}
 provider "azurerm" {
   subscription_id = "73de6881-2d08-471d-9c59-6f32608206d3"
   tenant_id       = "4f31d5a0-4f8c-4fe4-a9a3-7398b5099a99"
