@@ -35,13 +35,10 @@ jobs:
 
       - name: terraform plan
         run: terraform plan -var-file="environments/dev/dev.tfvars"
-        env:
-          TF_VAR_CLIENT_SECRET: ${{ vars.CLIENT_SECRET }}
 
       - name: terraform apply
         run: terraform apply -var-file="environments/dev/dev.tfvars" -auto-approve
-        env:
-          TF_VAR_CLIENT_SECRET: ${{ vars.CLIENT_SECRET }}
+      
 
           
       
