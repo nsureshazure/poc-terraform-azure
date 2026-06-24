@@ -19,6 +19,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+        name: checkout code
 
-      # Runs a single command using the runners shell
+      - name: Terraform installer
+
+        uses: autero1/action-terraform@v3.0.1
+        with:
+         terraform-version: 1.15.6
+
+          
       
