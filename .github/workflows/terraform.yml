@@ -27,5 +27,8 @@ jobs:
         with:
          terraform-version: 1.15.6
 
+      - name: terraform init
+        run: terraform init
+
           
       
